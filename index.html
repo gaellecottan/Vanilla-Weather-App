@@ -4,14 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
-    <link rel="stylesheet" href="src/style.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500&family=Chathura:wght@700&family=Wire+One&display=swap"
+      rel="stylesheet">
     <script src="https://kit.fontawesome.com/5498db6b17.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
   <div class="container">
@@ -26,20 +29,18 @@
         <button class="btn btn-light" id="current-location-button">📌</button>
         </div>
         </div>
-      </form>
-  
-    </div>
+      </form> 
     <div class="today-temp">
       <h1 id="city">RIO DE JANEIRO, BRASIL</h1>
-      <h2 id="currentDate"></h2>
+      <h2 id="currentDate">Wednesday 14 October 202, 15:04</h2>
       <div class="row">
-        <div class="col-6 left"><i class="fas fa-sun"></i></div>
+        <div class="col-6 column-today-data-left"><i class="fas fa-sun"></i></div>
   
-        <div class="col-6 right">
-          <span id="temperature">25</span>
+        <div class="col-6 column-today-data-right">
+          <span id="temperature" class="column-today-data-right">25</span>
           <span id="units"><a href="" id="celsius-link">°C</a>
             <a href="" id="fahrenheit-link">/°F</a></span>
-          </br><span id="description"></span></div>
+          </br><span id="description"></span>CLOUDY</div>
       </div>
       <p class="alert-advice">
         😎 <em>Don't forget to wear sunglasses!</em>
@@ -53,11 +54,11 @@
             <ul>
               <li>
                 <i class="fas fa-cloud-sun"></i>
-                <spanid id="sun-set"></span>
+                <span id="sun-set"></span>
               </li>
               <li>
                 <i class="fas fa-moon"></i>
-                <spanid id="sun-set"></span>
+                <span id="sun-set"></span>
               </li>
               <li>
                 <i class="fas fa-thermometer-half"></i> <span id="temp-min">°C</span>/<strong><span

@@ -1,3 +1,57 @@
 h1 {
-  color: grey;
+  font-size: 70px;
+  margin-bottom: 0;
+  font-family: "Wire One", sans-serif;
+  padding-top: 10px;
+}
+h2 {
+  font-size: 17px;
+  padding-top: 0;
+}
+.container {
+  border-radius: 10px;
+  background-image: linear-gradient(#145374 0%, #00334e 100%);
+  color: #f6f5f5;
+  display: block;
+  font-family: "Advent Pro", sans-serif;
+  max-width: 600px;
+  margin: 25px auto;
+  padding: 25px 50px 25px 50px;
+  text-align: center;
+}
+.search-form {
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+.column-today-data-left {
+  text-align: right;
+  font-size: 80px;
+}
+.column-today-data-right {
+  color: #f6f5f5;
+  font-family: "Wire One", sans-serif;
+  font-size: 60px;
+  line-height: 50px;
+  text-align: left;
+}
+#celsius-link {
+  color: #f6f5f5;
+  text-decoration: none;
+}
+#celsius-link:hover {
+  transition: 200ms all ease-in-out;
+  opacity: none;
+  text-decoration: none;
+  color: #f6f5f5;
+}
+#fahrenheit-link {
+  color: #f6f5f5;
+  opacity: 0.4;
+}
+#fahrenheit-link:hover {
+  transition: 200ms all ease-in-out;
+  font-weight: bold;
+  opacity: none;
+  text-decoration: none;
+  color: #f6f5f5;
 }
