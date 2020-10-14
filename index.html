@@ -33,63 +33,111 @@
     <div class="today-temp">
       <h1 id="city">RIO DE JANEIRO, BRASIL</h1>
       <h2 id="currentDate">Wednesday 14 October 202, 15:04</h2>
+    </hr>
       <div class="row">
-        <div class="col-6 column-today-data-left"><i class="fas fa-sun"></i></div>
+        <div class="col-4 column-today-data-left"><i class="fas fa-sun"></i></div>
   
-        <div class="col-6 column-today-data-right">
-          <span id="temperature" class="column-today-data-right">25</span>
+        <div class="col-4 column-today-data-middle">
+          <span id="temperature">25</span>
           <span id="units"><a href="" id="celsius-link">°C</a>
             <a href="" id="fahrenheit-link">/°F</a></span>
-          </br><span id="description"></span>CLOUDY</div>
+          </br>
+          <span id="description">CLOUDY</span>
+        </div>
+        <div class="col-4 column-today-data-right">
+        <ul>
+          <li>
+            <i class="fas fa-thermometer-half"></i> <span id="temp-min">°C</span>/<strong><span
+                id="temps-max">°C</span></strong>
+          </li>
+          <li>
+            <i class="fas fa-umbrella"></i>
+            <spanid id="humidity"></span>%
+          </li>
+          <li>
+            <i class="fas fa-wind"></i>
+            <spanid id="wind"></span>km/h
+          </li>
+        </ul>
+        </div>
       </div>
-      <p class="alert-advice">
-        😎 <em>Don't forget to wear sunglasses!</em>
+
         <hr />
-      </p>
     </div>
-    <form>
-      <div class="row">
-        <div class="col">
-          <div class="card  today-info">
-            <ul>
-              <li>
-                <i class="fas fa-cloud-sun"></i>
-                <span id="sun-set"></span>
-              </li>
-              <li>
-                <i class="fas fa-moon"></i>
-                <span id="sun-set"></span>
-              </li>
-              <li>
-                <i class="fas fa-thermometer-half"></i> <span id="temp-min">°C</span>/<strong><span
-                    id="temps-max">°C</span></strong>
-              </li>
-            </ul>
+        <form>
+          <div class="row">
+            <div class="col">
+              <div class="card next-week">
+                <h4 class="card-title">
+                  TUE
+                </h4>
+                <p class="card-content">
+                  <i class="fas fa-sun"></i><br />
+                  25°C<br />
+                  <strong>
+                    31°C
+                  </strong>
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card next-week">
+                <h4 class="card-title">
+                  WED
+                </h4>
+                <p class="card-content">
+                  <i class="fas fa-cloud"></i><br />
+                  25°C<br />
+                  <strong>
+                    30°C
+                  </strong>
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card next-week">
+                <h4 class="card-title">
+                  THU
+                </h4>
+                <p class="card-content">
+                  <i class="fas fa-cloud-showers-heavy"></i><br />
+                  23°C<br />
+                  <strong>
+                    29°C
+                  </strong>
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card next-week">
+                <h4 class="card-title">
+                  FRI
+                </h4>
+                <p class="card-content">
+                  <i class="fas fa-cloud-sun"></i><br />
+                  19°C<br />
+                  <strong>
+                    24°C
+                  </strong>
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card next-week">
+                <h4 class="card-title">
+                  SAT
+                </h4>
+                <p class="card-content">
+                  <i class="fas fa-sun"></i><br />
+                  26°C<br />
+                  <strong>
+                    29°C
+                  </strong>
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card today-info">
-            <ul>
-              <li>
-                <i class="fas fa-umbrella"></i>
-                <spanid id="humidity"></span>%
-              </li>
-              <li>
-                <i class="fas fa-tint"></i> 70%
-              </li>
-              <li>
-                <i class="fas fa-wind"></i>
-                <spanid id="wind"></span>km/h
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-secondary">Today</button>
-        <button type="button" class="btn btn-secondary">Next 5 days</button>
-      </div>
-    </form>
+        </form>
     <p class="footer">This page was built by <a href="https://www.linkedin.com/in/gaelle-cottan/" class="linkedin">Gaëlle Cottan</a></br>
       Find my code in <a href="https://github.com/gaellecottan">GitHub</a>
     </p>
