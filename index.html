@@ -14,6 +14,8 @@
       href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500&family=Chathura:wght@700&family=Wire+One&display=swap"
       rel="stylesheet">
     <script src="https://kit.fontawesome.com/5498db6b17.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
@@ -31,19 +33,21 @@
         </div>
       </form> 
     <div class="today-temp">
-      <h1 id="city">RIO DE JANEIRO, BRASIL</h1>
-      <h2 id="currentDate">Wednesday 14 October 202, 15:04</h2>
+      <h1 id="city"></h1>
+      <h2 id="currentDate"></h2>
     </hr>
       <div class="row">
-        <div class="col-4 column-today-data-left"><i class="fas fa-sun"></i></div>
+        <div class="col-4 column-today-data-left">
+          <img src="" id="icon"/>        
+        </div>
   
         <div class="col-4 column-today-data-middle">
-          <span id="temperature">25</span>
+          <span id="temperature"></span>
           <span id="units"><a href="" id="celsius-link">°C</a>
             <a href="" id="fahrenheit-link">/°F</a></span>
           </br>
           <span id="description">CLOUDY</span>
-        </div>
+        </div> 
         <div class="col-4 column-today-data-right">
         <ul>
           <li>
