@@ -1,4 +1,3 @@
-//date
 function formatDate() {
   let now = new Date();
   let currentDate = document.querySelector("#currentDate");
@@ -42,12 +41,12 @@ function formatDate() {
   currentDate.innerHTML = todayDate;
 }
 formatDate();
-//search city 2
 
 function displayWeatherCondition(response) {
+  celsiusTemperature = response.data.main.temp;
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
-    response.data.main.temp
+    celsiusTemperature
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
@@ -59,8 +58,8 @@ function displayWeatherCondition(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
-}
 
+}
 
 function searchCity(city) {
   let apiKey = "8ee8eeb7848dce2b70fe9c7824e18f43";
@@ -99,3 +98,27 @@ function showTemperature(response) {
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 searchCity("Rio de Janeiro");
+
+
+function convertToFahrenheit(event) {
+  event.preventDefault();
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  document.querySelector("#temperature").innerHTML = Math.round(fahrenheitTemperature);
+}
+
+function convertToCelsius(event) {
+  event.preventDefault();
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+  document.querySelector("#temperature").innerHTML = Math.round(celsiusTemperature);
+}
+
+let celsiusTemperature = null;
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", convertToFahrenheit);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", convertToCelsius);

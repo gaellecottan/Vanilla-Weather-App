@@ -67,24 +67,11 @@ li {
   padding-top: 5px;
   text-align: center;
 }
-#celsius-link {
+
+.weather-temperature .active {
   color: #f6f5f5;
-  text-decoration: none;
+  cursor: default;
 }
-#celsius-link:hover {
-  transition: 200ms all ease-in-out;
-  opacity: none;
+.weather-temperature .active:hover {
   text-decoration: none;
-  color: #f6f5f5;
-}
-#fahrenheit-link {
-  color: #f6f5f5;
-  opacity: 0.4;
-}
-#fahrenheit-link:hover {
-  transition: 200ms all ease-in-out;
-  font-weight: bold;
-  opacity: none;
-  text-decoration: none;
-  color: #f6f5f5;
 }
