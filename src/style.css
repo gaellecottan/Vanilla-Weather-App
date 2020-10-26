@@ -20,14 +20,15 @@ li {
 }
 .container {
   border-radius: 10px;
-  background-image: linear-gradient(#145374 0%, #00334e 100%);
-  color: #f6f5f5;
+  background-color: #ec6e4c;
+  color: #f8f1f1;
   display: block;
   font-family: "Advent Pro", sans-serif;
   max-width: 600px;
   margin: 25px auto;
   padding: 25px 50px 25px 50px;
   text-align: center;
+  box-shadow: 7px 7px 2px 1px rgba(22, 105, 122, 0.1);
 }
 .search-form {
   padding-top: 5px;
@@ -38,11 +39,12 @@ li {
   font-size: 80px;
 }
 .column-today-data-middle {
-  color: #f6f5f5;
+  color: #f8f1f1;
   font-family: "Wire One", sans-serif;
   font-size: 60px;
   line-height: 50px;
   text-align: center;
+  line-height: 57px;
 }
 .column-today-data-right {
   align-content: start;
@@ -54,14 +56,13 @@ li {
 .today-temp {
   display: block;
   margin: 0 auto;
-  background-color: #ee6f57;
-  background-image: linear-gradient(#ee6f57 0%, #145374 100%);
+  background-color: #16697a;
   border-radius: 5px;
 }
 .card {
-  background-image: linear-gradient(#145374 0%, #ee6f57 100%);
+  background-color: #16697a;
   border: none;
-  color: #f6f5f5;
+  color: #f8f1f1;
   height: 120px;
   margin-bottom: 20px;
   padding-top: 5px;
@@ -69,9 +70,17 @@ li {
 }
 
 .weather-temperature .active {
-  color: #f6f5f5;
+  color: #f8f1f1;
   cursor: default;
 }
 .weather-temperature .active:hover {
+  text-decoration: none;
+}
+.footer-links {
+  color: #f8f1f1;
+  text-decoration: underline;
+}
+.footer-links:hover {
+  color: #16697a;
   text-decoration: none;
 }
