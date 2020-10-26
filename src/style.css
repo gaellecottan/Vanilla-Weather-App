@@ -10,14 +10,6 @@ h2 {
   padding-bottom: 20px;
 }
 
-li {
-  align-content: center;
-  font-size: 16px;
-  list-style: none;
-  line-height: 34px;
-  padding: 0;
-  text-align: center;
-}
 .container {
   border-radius: 10px;
   background-color: #ec6e4c;
@@ -28,45 +20,40 @@ li {
   margin: 25px auto;
   padding: 25px 50px 25px 50px;
   text-align: center;
-  box-shadow: 7px 7px 2px 1px rgba(22, 105, 122, 0.1);
+  box-shadow: 12px 29px 30px 0px rgba(22, 105, 122, 0.5);
 }
 .search-form {
   padding-top: 5px;
   padding-bottom: 15px;
+  width: 527px;
 }
 .column-today-data-left {
   text-align: right;
-  font-size: 80px;
 }
 .column-today-data-middle {
   color: #f8f1f1;
   font-family: "Wire One", sans-serif;
   font-size: 60px;
   line-height: 50px;
-  text-align: center;
+  text-align: left;
   line-height: 57px;
 }
-.column-today-data-right {
-  align-content: start;
-  font-size: 16px;
-  list-style: none;
-  line-height: 34px;
-  padding: 0;
+
+#units {
+  font-size: 40px;
+  position: relative;
+  top: -15px;
 }
+
 .today-temp {
   display: block;
   margin: 0 auto;
   background-color: #16697a;
   border-radius: 5px;
 }
-.card {
-  background-color: #16697a;
-  border: none;
-  color: #f8f1f1;
-  height: 120px;
-  margin-bottom: 20px;
-  padding-top: 5px;
-  text-align: center;
+
+.today-humidity-wind {
+  margin-top: 15px;
 }
 
 .weather-temperature .active {
@@ -76,11 +63,11 @@ li {
 .weather-temperature .active:hover {
   text-decoration: none;
 }
-.footer-links {
+.footer-link {
   color: #f8f1f1;
   text-decoration: underline;
 }
-.footer-links:hover {
+.footer-link:hover {
   color: #16697a;
   text-decoration: none;
 }

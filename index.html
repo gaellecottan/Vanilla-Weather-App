@@ -37,114 +37,27 @@
       <h2 id="currentDate"></h2>
     </hr>
       <div class="row">
-        <div class="col-4 column-today-data-left">
+        <div class="col-6 column-today-data-left">
           <img src="" id="icon" alt=""/>
-        
         </div>
-  
-        <div class="col-4 column-today-data-middle weather-temperature">
+        <div class="col-6 column-today-data-middle weather-temperature">
           <span id="temperature"></span>
           <span id="units"><a href="" id="celsius-link" class="active">°C</a>/
             <a href="" id="fahrenheit-link">°F</a></span>
           </br>
           <span id="description">CLOUDY</span>
         </div> 
-        <div class="col-4 column-today-data-right">
-        <ul>
-          <li>
-            <i class="fas fa-thermometer-half"></i> <span id="temp-min">°C</span>/<strong><span
-                id="temps-max">°C</span></strong>
-          </li>
-          <li>
-            <i class="fas fa-umbrella"></i>
-            <spanid id="humidity"></span>%
-          </li>
-          <li>
-            <i class="fas fa-wind"></i>
-            <spanid id="wind"></span>km/h
-          </li>
-        </ul>
-        </div>
       </div>
-
+    </hr>
+              <p class="today-humidity-wind">
+                Humidity: <span id="humidity"></span>% - Wind :
+                <span id="wind"></span>km/h
+              </p>
         <hr />
     </div>
-        <form>
-          <div class="row">
-            <div class="col">
-              <div class="card next-week">
-                <h4 class="card-title">
-                  TUE
-                </h4>
-                <p class="card-content">
-                  <i class="fas fa-sun"></i><br />
-                  25°C<br />
-                  <strong>
-                    31°C
-                  </strong>
-                </p>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card next-week">
-                <h4 class="card-title">
-                  WED
-                </h4>
-                <p class="card-content">
-                  <i class="fas fa-cloud"></i><br />
-                  25°C<br />
-                  <strong>
-                    30°C
-                  </strong>
-                </p>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card next-week">
-                <h4 class="card-title">
-                  THU
-                </h4>
-                <p class="card-content">
-                  <i class="fas fa-cloud-showers-heavy"></i><br />
-                  23°C<br />
-                  <strong>
-                    29°C
-                  </strong>
-                </p>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card next-week">
-                <h4 class="card-title">
-                  FRI
-                </h4>
-                <p class="card-content">
-                  <i class="fas fa-cloud-sun"></i><br />
-                  19°C<br />
-                  <strong>
-                    24°C
-                  </strong>
-                </p>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card next-week">
-                <h4 class="card-title">
-                  SAT
-                </h4>
-                <p class="card-content">
-                  <i class="fas fa-sun"></i><br />
-                  26°C<br />
-                  <strong>
-                    29°C
-                  </strong>
-                </p>
-              </div>
-            </div>
-          </div>
-        </form>
-    <p class="footer">This page was built by <a href="https://www.linkedin.com/in/gaelle-cottan/" class="footer-links">Gaëlle Cottan</a></br>
-      Find my code in <a href="https://github.com/gaellecottan" class="footer-links">GitHub</a>
+
+    <p class="footer">
+      Open-source code by <a href="https://github.com/gaellecottan" class="footer-link">Gaëlle Cottan</a>
     </p>
 
       <script src="src/script.js"></script>
